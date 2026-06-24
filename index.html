@@ -628,72 +628,6 @@
             border: none;
         }
 
-        /* Love Story Section */
-        .love-story {
-            background: var(--white);
-        }
-
-        .timeline {
-            position: relative;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 20px;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: linear-gradient(180deg, var(--gold), var(--gold-light));
-        }
-
-        .timeline-item {
-            position: relative;
-            padding-left: 60px;
-            margin-bottom: 40px;
-        }
-
-        .timeline-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .timeline-dot {
-            position: absolute;
-            left: 12px;
-            top: 5px;
-            width: 18px;
-            height: 18px;
-            background: var(--gold);
-            border-radius: 50%;
-            border: 3px solid var(--white);
-            box-shadow: 0 0 0 3px var(--gold);
-        }
-
-        .timeline-date {
-            font-size: 0.75rem;
-            font-weight: 600;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: var(--gold);
-            margin-bottom: 8px;
-        }
-
-        .timeline-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: var(--primary);
-            margin-bottom: 8px;
-        }
-
-        .timeline-text {
-            font-size: 0.85rem;
-            color: var(--text-light);
-            line-height: 1.7;
-        }
-
         /* Gallery Section */
         .gallery {
             background: var(--cream);
@@ -1012,7 +946,7 @@
         /* Floating Elements */
         .music-btn {
             position: fixed;
-            bottom: 20px;
+            bottom: 80px;
             right: 20px;
             width: 50px;
             height: 50px;
@@ -1048,42 +982,6 @@
 
         .music-btn.playing svg {
             animation: spin 3s linear infinite;
-        }
-
-        .share-btn {
-            position: fixed;
-            bottom: 80px;
-            right: 20px;
-            width: 50px;
-            height: 50px;
-            background: var(--primary);
-            border: none;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            z-index: 1000;
-            box-shadow: var(--shadow-lg);
-            transition: all 0.3s;
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        .share-btn.visible {
-            opacity: 1;
-            pointer-events: all;
-        }
-
-        .share-btn:hover {
-            transform: scale(1.1);
-            background: var(--primary-light);
-        }
-
-        .share-btn svg {
-            width: 20px;
-            height: 20px;
-            fill: var(--white);
         }
 
         /* Floating Navigation */
@@ -1339,8 +1237,8 @@
         </svg>
 
         <p class="cover-subtitle">The Wedding Of</p>
-        <h1 class="cover-names">Putri & Andika</h1>
-        <p class="cover-date">Minggu, 28 Desember 2027</p>
+        <h1 class="cover-names">Ima & Anang</h1>
+        <p class="cover-date">Sabtu, 8 Agustus 2026</p>
         <p class="cover-guest">Kepada Yth. Bapak/Ibu/Saudara/i</p>
         <p class="cover-guest-name" id="guestName">Tamu Undangan</p>
         <p class="cover-note">*Mohon maaf jika ada kesalahan dalam penulisan nama / gelar.</p>
@@ -1357,7 +1255,7 @@
         <section class="hero" id="home">
             <div class="hero-content">
                 <p class="hero-subtitle animate-on-scroll">The Wedding Of</p>
-                <h1 class="hero-names animate-on-scroll delay-1">Putri & Andika</h1>
+                <h1 class="hero-names animate-on-scroll delay-1">Ima & Anang</h1>
                 <p class="hero-date animate-on-scroll delay-2">Minggu, 28 Desember 2027</p>
                 <div class="hero-initials animate-on-scroll delay-3">
                     <div class="initial">P</div>
@@ -1395,12 +1293,12 @@
                     <div class="couple-photo">
                         <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" alt="Putri" loading="lazy">
                     </div>
-                    <h3 class="couple-name">Putri</h3>
-                    <p class="couple-fullname">Putri Cantika Sari</p>
-                    <p class="couple-parents">Putri Pertama dari<br>Bapak Abdul Rozak & Ibu Adelia Marni</p>
+                    <h3 class="couple-name">Ima</h3>
+                    <p class="couple-fullname">Ni`mah Firsta Cahya Susilo, M. Kom</p>
+                    <p class="couple-parents">Putri Pertama dari<br>Bapak Susilo Mansurudin (Alm) & Ibu Nuraini Susanti</p>
                     <a href="#" class="couple-ig">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-                        @putri.cantika
+                        @cahya.pertama
                     </a>
                 </div>
 
@@ -1410,12 +1308,12 @@
                     <div class="couple-photo">
                         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Andika" loading="lazy">
                     </div>
-                    <h3 class="couple-name">Andika</h3>
-                    <p class="couple-fullname">Putra Andika Pratama</p>
-                    <p class="couple-parents">Putra Pertama dari<br>Bapak Deni Bastian & Ibu Aisha Dania</p>
+                    <h3 class="couple-name">Anang</h3>
+                    <p class="couple-fullname">Anang Syaifulloh, S. Ars</p>
+                    <p class="couple-parents">Putra Pertama dari<br>Bapak Toiman & Ibu Yunsibah</p>
                     <a href="#" class="couple-ig">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-                        @andika.pratama
+                        @anangsyaifulloh
                     </a>
                 </div>
             </div>
@@ -1483,16 +1381,16 @@
                 <div class="event-card animate-on-scroll delay-1">
                     <h3 class="event-type">Akad Nikah</h3>
                     <div class="event-date-circle">
-                        <span class="event-date-day">28</span>
-                        <span class="event-date-month">Des</span>
-                        <span class="event-date-year">2027</span>
+                        <span class="event-date-day">8</span>
+                        <span class="event-date-month">Aug</span>
+                        <span class="event-date-year">2026</span>
                     </div>
-                    <p class="event-time">Minggu, 28 Desember 2027<br>08:00 WIB</p>
+                    <p class="event-time">Sabtu, 8 Agustus 2026<br>08:00 WIB</p>
                     <div class="event-location">
-                        <h4>Masjid Al-Ikhlas</h4>
-                        <p>Jl. TB Simatupang, Jakarta Selatan</p>
+                        <h4>Kantor Bakorwil Malang</h4>
+                        <p>Jl. Simpang Ijen No.2, Oro-oro Dowo, Kec. Klojen, Kota Malang</p>
                     </div>
-                    <a href="https://maps.google.com/?q=Menara+165+Jakarta" target="_blank" class="btn-maps">
+                    <a href="https://maps.app.goo.gl/9t2cBDx14qNKcprRA" target="_blank" class="btn-maps">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                         Lihat Lokasi
                     </a>
@@ -1502,15 +1400,15 @@
                     <h3 class="event-type">Resepsi</h3>
                     <div class="event-date-circle">
                         <span class="event-date-day">28</span>
-                        <span class="event-date-month">Des</span>
-                        <span class="event-date-year">2027</span>
+                        <span class="event-date-month">Agustus</span>
+                        <span class="event-date-year">2026</span>
                     </div>
-                    <p class="event-time">Minggu, 28 Desember 2027<br>09:00 - 13:00 WIB</p>
+                    <p class="event-time">Sabtu, 8 Agustus 2026<br>10:00 - 13:00 WIB</p>
                     <div class="event-location">
-                        <h4>Menara 165</h4>
-                        <p>Jl. TB Simatupang, Jakarta Selatan</p>
+                        <h4>Kantor Bakorwil Malang</h4>
+                        <p>Jl. Simpang Ijen No.2, Oro-oro Dowo, Kec. Klojen, Kota Malang</p>
                     </div>
-                    <a href="https://maps.google.com/?q=Menara+165+Jakarta" target="_blank" class="btn-maps">
+                    <a href="https://maps.app.goo.gl/9t2cBDx14qNKcprRA" target="_blank" class="btn-maps">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                         Lihat Lokasi
                     </a>
@@ -1530,44 +1428,7 @@
                         <span class="line"></span>
                     </div>
                 </div>
-                <div class="map-container animate-on-scroll delay-1">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.294!2d106.8225!3d-6.2615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTUnNDEuNCJTIDEwNsKwNDknMjEuMCJF!5e0!3m2!1sid!2sid!4v1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </section>
-
-        <!-- Love Story Section -->
-        <section class="love-story" id="story">
-            <div class="container">
-                <div class="section-title animate-on-scroll">
-                    <p>Our Journey</p>
-                    <h2>Love Story</h2>
-                    <div class="section-divider">
-                        <span class="line"></span>
-                        <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-                        <span class="line"></span>
-                    </div>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item animate-on-scroll delay-1">
-                        <div class="timeline-dot"></div>
-                        <p class="timeline-date">25 Agustus 2023</p>
-                        <h4 class="timeline-title">Pertama Bertemu</h4>
-                        <p class="timeline-text">Berawal dari tempat pekerjaan di Cianjur, kami mengenal satu sama lain dan belum ada benih cinta kala itu, hanya sebatas teman kerja.</p>
-                    </div>
-                    <div class="timeline-item animate-on-scroll delay-2">
-                        <div class="timeline-dot"></div>
-                        <p class="timeline-date">03 Juni 2024</p>
-                        <h4 class="timeline-title">Menjalin Hubungan Serius</h4>
-                        <p class="timeline-text">Setelah cukup mengenal satu sama lain, akhirnya kami memutuskan untuk melanjutkan ke hubungan yang lebih serius dan mempertemukan kedua keluarga.</p>
-                    </div>
-                    <div class="timeline-item animate-on-scroll delay-3">
-                        <div class="timeline-dot"></div>
-                        <p class="timeline-date">28 Desember 2027</p>
-                        <h4 class="timeline-title">Hari Bahagia</h4>
-                        <p class="timeline-text">Sampai tanggal ini kami melaksanakan akad dan akhirnya menjadi pasangan suami istri. Semoga Allah SWT memberikan keberkahan pernikahan ini. Aamiin.</p>
-                    </div>
-                </div>
+                <div class="map-container animate-on-scroll delay-1"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.343700289663!2d112.61920607754912!3d-7.9633876588706265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6282b6f0d0a61%3A0x474046e3ce87264a!2sBadan%20Koordinasi%20Wilayah%20Pemerintahan%20dan%20Pembangunan%20Jawa%20Timur%20III%20(%20BAKORWIL%20III%20)%20Malang!5e0!3m2!1sen!2sid!4v1782314445448!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
             </div>
         </section>
 
@@ -1755,8 +1616,8 @@
                 <p class="footer-thanks animate-on-scroll">Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu kepada kami.</p>
                 <p class="footer-salam animate-on-scroll delay-1">Wassalamu'alaikum Warahmatullahi Wabarakatuh</p>
                 <p class="footer-thanks animate-on-scroll delay-2">Kami Yang Berbahagia</p>
-                <h2 class="footer-names animate-on-scroll delay-3">Putri & Andika</h2>
-                <p class="footer-credit animate-on-scroll delay-4">© 2027 The Wedding of Putri & Andika</p>
+                <h2 class="footer-names animate-on-scroll delay-3">Ima & Anang</h2>
+                <p class="footer-credit animate-on-scroll delay-4">© 2026 The Wedding of Putri & Andika</p>
             </div>
         </footer>
     </div>
@@ -1790,11 +1651,6 @@
         <svg viewBox="0 0 24 24" id="musicIcon"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
     </button>
 
-    <!-- Share Button -->
-    <button class="share-btn" id="shareBtn" title="Share">
-        <svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/></svg>
-    </button>
-
     <!-- Lightbox -->
     <div class="lightbox" id="lightbox">
         <button class="lightbox-close" onclick="closeLightbox()">
@@ -1823,20 +1679,18 @@
         const mainContent = document.getElementById('mainContent');
         const bgMusic = document.getElementById('bgMusic');
         const musicBtn = document.getElementById('musicBtn');
-        const shareBtn = document.getElementById('shareBtn');
         const floatNav = document.getElementById('floatNav');
 
         btnOpen.addEventListener('click', () => {
             cover.classList.add('opened');
             document.body.classList.remove('no-scroll');
             mainContent.classList.add('visible');
-            
+
             setTimeout(() => {
                 cover.style.display = 'none';
                 musicBtn.classList.add('visible');
-                shareBtn.classList.add('visible');
                 floatNav.classList.add('visible');
-                
+
                 // Auto play music
                 bgMusic.volume = 0.5;
                 bgMusic.play().then(() => {
@@ -1860,27 +1714,8 @@
             isPlaying = !isPlaying;
         });
 
-        // ===== Share =====
-        shareBtn.addEventListener('click', async () => {
-            const shareData = {
-                title: 'The Wedding of Putri & Andika',
-                text: 'Kami mengundang Anda untuk hadir di pernikahan kami',
-                url: window.location.href
-            };
-
-            if (navigator.share) {
-                try {
-                    await navigator.share(shareData);
-                } catch (err) {
-                    copyToClipboard(window.location.href);
-                }
-            } else {
-                copyToClipboard(window.location.href);
-            }
-        });
-
         // ===== Countdown =====
-        const weddingDate = new Date('2027-12-28T08:00:00+07:00').getTime();
+        const weddingDate = new Date('2026-08-08T08:00:00+07:00').getTime();
 
         function updateCountdown() {
             const now = new Date().getTime();
@@ -1905,13 +1740,13 @@
         // ===== Save to Calendar =====
         document.getElementById('btnCalendar').addEventListener('click', (e) => {
             e.preventDefault();
-            
+
             const event = {
-                title: 'Pernikahan Putri & Andika',
-                start: '20271228T010000Z',
-                end: '20271228T060000Z',
-                location: 'Menara 165, Jl. TB Simatupang, Jakarta Selatan',
-                description: 'Akad Nikah: 08:00 WIB | Resepsi: 09:00 - 13:00 WIB'
+                title: 'Pernikahan Ima & Anang',
+                start: '20260808T010000Z',
+                end: '20260808T060000Z',
+                location: 'Jl. Simpang Ijen No.2, Oro-oro Dowo, Kec. Klojen, Kota Malang',
+                description: 'Akad Nikah: 08:00 WIB | Resepsi: 10:00 - 13:00 WIB'
             };
 
             const icsContent = [
@@ -1936,7 +1771,7 @@
             link.href = URL.createObjectURL(blob);
             link.download = 'pernikahan-putri-andika.ics';
             link.click();
-            
+
             showToast('Kalender berhasil diunduh!');
         });
 
@@ -1978,7 +1813,7 @@
         // ===== RSVP Form =====
         document.getElementById('rsvpForm').addEventListener('submit', (e) => {
             e.preventDefault();
-            
+
             const name = document.getElementById('rsvpName').value;
             const attendance = document.querySelector('input[name="attendance"]:checked')?.value;
             const guests = document.getElementById('guests').value;
@@ -2000,7 +1835,7 @@
                     <p class="wish-time">Baru saja</p>
                 `;
                 wishesList.insertBefore(wishCard, wishesList.firstChild);
-                
+
                 const count = parseInt(document.getElementById('wishCount').textContent) + 1;
                 document.getElementById('wishCount').textContent = count;
             }
